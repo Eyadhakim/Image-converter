@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data:;">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Converter</h1>
+
+        <!-- File Upload Section -->
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*" multiple>
+            <label for="fileInput">Choose Images</label>
+            <p>or drag & drop your images here</p>
+        </div>
+
+        <!-- Preview and Options Section -->
+        <div class="preview-options" id="previewOptions">
+            <div id="imageList" class="image-list"></div>
+
+            <div class="format-options">
+                <label for="formatSelect">Convert to:</label>
+                <select id="formatSelect">
+                    <option value="jpeg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="webp">WebP</option>
+                    <option value="tiff">TIFF</option>
+                </select>
+            </div>
+
+            <button id="convertButton">Convert & Download</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

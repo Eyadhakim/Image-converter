@@ -1,0 +1,122 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Upload Area */
+.upload-area {
+    border: 2px dashed #cccccc;
+    border-radius: 6px;
+    padding: 30px;
+    background-color: #f0f4f8;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.upload-area input[type="file"] {
+    display: none;
+}
+
+.upload-area label {
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upload-area p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Image List */
+.image-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.image-item img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.image-item .image-name {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Format Options and Button */
+.format-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.format-options label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px;
+}
+
+#formatSelect {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#convertButton {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#convertButton:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,71 @@
+{
+  "name": "image-converter",
+  "version": "1.0.0",
+  "description": "An application to convert images to various formats.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "image",
+    "convert",
+    "format",
+    "webp",
+    "png",
+    "jpg",
+    "jpeg",
+    "tiff",
+    "electron",
+    "javascript"
+  ],
+  "author": "EyadAbdelhakim <eyadabdelhakim12213462882008@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  },
+  "build": {
+    "appId": "com.johndoe.electronapp",
+    "productName": "Image Converter",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "script.js",
+      "styles/**/*",
+      "public/icons/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "public/icons/icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "public/icons/icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "public/icons/icon.png",
+      "maintainer": "EyadAbdelhakim <eyadabdelhakim12213462882008@gmail.com>",
+      "category": "Utility"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eyadhakim/image-converter.git"
+  }
+}
